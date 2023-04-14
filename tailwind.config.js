@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
+
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -11,7 +13,12 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      }, 
+      fontFamily:{
+        'arabicFont':['Changa' , 'sans-serif'], 
+        'arabicFont2':['Amiri' , 'serif'],
+        'arabicFont3':['Lateef' , 'serif'],
+      }
     },
   },
   plugins: [],

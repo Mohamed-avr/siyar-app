@@ -1,6 +1,6 @@
 import { useEffect, useState , useContext  } from 'react'
 import axios from 'axios'
-import AppContext from '@/component/appContext';
+import AppContext from '@/component/AppContext';
 import { useRouter } from 'next/router';
 
 
@@ -36,7 +36,7 @@ export default function Home() {
   // handling sending data
   const handlingData = (namePerson , bioPerson ) => {
     setInfo({"name":namePerson , "bio":bioPerson})
-    handlingRouting()
+    handlingRouting
   }
 
 

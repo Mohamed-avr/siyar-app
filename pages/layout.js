@@ -1,4 +1,4 @@
-import AppContext from '@/component/appContext';
+import AppContext from '@/component/AppContext';
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useContext } from 'react';
@@ -28,7 +28,7 @@ export default function layout() {
                 </div>
                 <div className='sm:px-10 px-3'>
                     <p className='mt text-right mt-10 font-lg text-black/85 pb-10  '>
-{info.bio}
+                        {info.bio}
                     </p>
                 </div>
             </article>

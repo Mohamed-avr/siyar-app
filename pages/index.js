@@ -35,7 +35,7 @@ export default function Home() {
          
           <input 
           onInput={(e) => {
-            console.log(e.target.value)
+            console.log(e.target.value())
           }}
           type='text'  
           placeholder='إبحث عن شخصية' 

@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react'
 import axios from 'axios'
-import AppContext from '@/component/AppContext';
+import AppContext from '@/pages/AppContext';
 import { useRouter } from 'next/router';
 import Footer from '@/component/Footer';
 

@@ -1,4 +1,4 @@
-import AppContext from '/component/AppContext'
+import AppContext from '@/pages/AppContext'
 import '@/styles/globals.css'
 import { useState } from 'react'
 

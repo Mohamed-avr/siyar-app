@@ -5,10 +5,11 @@ import { useState } from 'react'
 
 export default function App({ Component, pageProps }) {
 
-   const [info , setInfo] = useState({"name":"empty" , "bio":"empty" })
+   const [ person , setPerson] = useState();
+   const [ bio , setBio] = useState();
 
   return (
-  <AppContext.Provider value={{ info , setInfo  }}>
+  <AppContext.Provider value={{ person , setPerson , bio , setBio  }}>
     <Component {...pageProps} />
   </AppContext.Provider>)
 }

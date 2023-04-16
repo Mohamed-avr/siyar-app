@@ -18,16 +18,16 @@ export default function Layout() {
             <article >
                 <div className=' bg-white h-40 w-full  rounded-b-lg overflow-hidden flex flex-col  items-end  '>
                     <div className=' h-10 w-full  '></div>
-                    <div className=' flex justify-between  items-start w-full  mt-6   px-10  '>
+                    <div className=' flex justify-between  items-end w-full  mt-6   px-10    '>
                         <button onClick={handlingRouting} className=' rounded-lg bg-orange-700 px-10 py-2 text-white hover:bg-orange-800/80  '> العودة</button>
                         <div className='flex flex-col justify-start items-end' >
-                            <h2 className=' text-3xl  marker:text-center font-black '> {person} </h2>
+                            <h2 className=' text-3xl  marker:text-center font-black '> {person} <span className='text-orange-700 pt-2'> ✦ </span>  </h2>
                             <h6 className='mt-2  '> كتاب سير أعلام النبلاء</h6>
                         </div>
 
                     </div>
                 </div>
-                <div className='sm:px-10 px-3'>
+                <div className='sm:px-10 px-3 min-h-[22rem]'>
                     <p className='mt text-right mt-10 font-lg text-black/85 pb-10  '>
                         {bio}
                     </p>

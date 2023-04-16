@@ -29,3 +29,8 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+.paddingStyle {
+  padding: 5px 10px;
+  margin:5px 0 ;
+}

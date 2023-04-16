@@ -1,4 +1,4 @@
-import AppContext from '@/pages/AppContext';
+import AppContext from '@/component/AppContext';
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useContext } from 'react';

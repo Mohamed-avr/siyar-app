@@ -3,6 +3,10 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useContext } from 'react';
 
+
+
+
+
 export default function Layout() {
     const { person, setPerson, bio, setBio } = useContext(AppContext);
     console.log()
@@ -14,15 +18,15 @@ export default function Layout() {
     }
 
     return (
-        <div className=' bg-gray-200/40  font-arabicFont2 font '>
+        <div className=' bg-gray-200/40  font-arabicFont2 font dark:bg-ForBackprimary dark:text-ForTexts min-h-[45rem] '>
             <article >
-                <div className=' bg-white h-40 w-full  rounded-b-lg overflow-hidden flex flex-col  items-end  '>
+                <div className=' bg-white dark:bg-ForBackSecondary  h-40 w-full  rounded-b-lg overflow-hidden flex flex-col  items-end  '>
                     <div className=' h-10 w-full  '></div>
                     <div className=' flex justify-between  items-end w-full  mt-6   px-10    '>
-                        <button onClick={handlingRouting} className=' rounded-lg bg-orange-700 px-10 py-2 text-white hover:bg-orange-800/80  '> العودة</button>
+                        <button onClick={handlingRouting} className=' rounded-lg bg-green-500 px-10 py-2 text-white hover:bg-green-800/80   '> العودة</button>
                         <div className='flex flex-col justify-start items-end' >
-                            <h2 className=' text-3xl  marker:text-center font-black '> {person} <span className='text-orange-700 pt-2'> ✦ </span>  </h2>
-                            <h6 className='mt-2  '> كتاب سير أعلام النبلاء</h6>
+                            <h2 className='  marker:text-center font-black  sm:text-2xl text-lg'> {person}  <span className='text-green-500 pt-2'> ✦ </span>  </h2>
+                            <h6 className='mt-2  sm:text-base text-sm     '> كتاب سير أعلام النبلاء</h6>
                         </div>
 
                     </div>

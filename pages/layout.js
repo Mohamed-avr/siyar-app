@@ -23,7 +23,7 @@ export default function Layout() {
                 <div className=' bg-white dark:bg-ForBackSecondary  h-40 w-full  rounded-b-lg overflow-hidden flex flex-col  items-end  '>
                     <div className=' h-10 w-full  '></div>
                     <div className=' flex justify-between  items-end w-full  mt-6   px-10    '>
-                        <button onClick={handlingRouting} className=' rounded-lg bg-green-500 px-10 py-2 text-white hover:bg-green-800/80   '> العودة</button>
+                        <button onClick={handlingRouting} className=' rounded-lg bg-green-500 px-10 py-2 text-white hover:bg-green-800/80 '> العودة</button>
                         <div className='flex flex-col justify-start items-end' >
                             <h2 className='  marker:text-center font-black  sm:text-2xl text-lg'> {person}  <span className='text-green-500 pt-2'> ✦ </span>  </h2>
                             <h6 className='mt-2  sm:text-base text-sm     '> كتاب سير أعلام النبلاء</h6>

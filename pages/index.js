@@ -70,7 +70,7 @@ export default function Home() {
                   ev.preventDefault()
                   setBio(e.biography);
                   setPerson(e.name);
-                  router.push('/Layout');
+                  router.push('/layout');
                 }
                   
                 }  className='text-green-500 text-lg cursor-pointer hover:text-green-400   '> {'...عرض المزيد'}</span> </p>
@@ -83,7 +83,7 @@ export default function Home() {
                     event.preventDefault()
                     setBio(e.biography);
                     setPerson(e.name);
-                    router.push('/Layout');
+                    router.push('/layout');
                   }}
                 >
                   قراءة

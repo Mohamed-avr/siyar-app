@@ -41,14 +41,17 @@ export default function Home() {
       </Head>
 
       <main className={`${siyar ? 'dark:bg-ForBackprimary dark:text-ForTexts h-auto' : 'dark:bg-ForBackprimary dark:text-ForTexts h-screen'}`} >
-        <div className=' dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative  rounded-bl-[1.6rem] sm:rounded-bl-[3rem] rounded-br-[1.6rem] sm:rounded-br-[3rem]  shadow-xl  shadow-black/5  '>
+       
+        <div className='  dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative  rounded-bl-[1.6rem] sm:rounded-bl-[3rem] rounded-br-[1.6rem] sm:rounded-br-[3rem]  shadow-xl  shadow-black/5  '>
 
           <div className='flex  mt-20 justify-between w-full  '>
-            <DarkModeButton />
+           <div className=' bg-black/10 px-4 py-2 rounded-xl '>
+           <DarkModeButton />
+           </div>
             <h2 className=' font-arabicFont sm:text-3xl text-xl dark:text-ForTexts text-black   z-10 '> أكثر الشخصيات العربية </h2>
           </div>
 
-          <div className='mt-10  z-20   '>
+          <div className='mt-6  z-20   '>
             <input
               onInput={(e) => {
                 console.log(e.target.value)
@@ -64,18 +67,9 @@ export default function Home() {
         <div className='flex justify-center items-center  flex-wrap mt-16  '>
           {siyar ? siyar.map((e) => {
             return (
-              <article key={e.id} className=' hover:bg-gray-100  dark:bg-ForBackSecondary  sm:w-[24rem] w-[20rem] m-2 rounded-lg bg-white shadow-lg text-xl py-3   font-arabicFont2 pt-5 pr-4 pl-2 flex flex-col justify-start items-end '>
-                <h2 className='text-right font-bold   sm:text-xl  text-lg  '>{e.name} <span className='text-green-500'> ✦ </span></h2>
-                <p className='text-[12px] text-right mt-3 text-black/65'> {e.biography.slice(0, 140)}
-                  {/* <span onClick={(ev) => {
-                    ev.preventDefault()
-                    setBio(e.biography);
-                    setPerson(e.name);
-                    router.push('/layout');
-                  }
-
-                  } className='text-green-500 text-lg cursor-pointer hover:text-green-400   '> {'...}
-                  </span> */}
+              <article key={e.id} className=' hover:bg-gray-100  dark:bg-ForBackSecondary  sm:w-[26rem] w-[22rem] m-2 rounded-lg bg-white shadow-lg text-xl py-3   font-arabicFont2 pt-5 pr-4 pl-2 flex flex-col justify-start items-end '>
+                <h2 className='text-right font-bold   sm:text-[22px]  text-lg  '>{e.name} <span className='text-green-500'> ✦ </span></h2>
+                <p className='text-[14px] text-right mt-3 text-black/65'> {e.biography.slice(0, 140)}
                 </p>
 
                 <button
@@ -94,10 +88,12 @@ export default function Home() {
               </article>
             )
           }) :
-            <div className='mt-2 min-h-[19rem]  '> ...  جاري تحميل البيانات </div>
+            <div className='mt-2 min-h-[19rem] flex flex-col  justify-center items-center  text-center '> 
+             <div className="lds-dual-ring"></div>  
+        <h4 className=' font-arabicFont mt-4 '>   جاري تحميل البيانات </h4></div>
           }
         </div>
-        {/* <DarkModeButton/> */}
+        
         {/* <Footer /> */}
 
       </main>

@@ -1,15 +1,15 @@
 import { useEffect, useState, useContext } from 'react'
 import axios from 'axios'
-import AppContext from '@/component/AppContext';
+import AppContext from '@/components/AppContext';
 import { useRouter } from 'next/router';
-import Footer from '@/component/Footer';
+import Footer from '@/components/Footer';
 import useDarkMode from './useDarkMode';
 import Head from 'next/head';
-import DarkModeButton from '@/component/DarkModeButton';
+import DarkModeButton from '@/components/DarkModeButton';
 import { getSiyar } from './api/axios';
-import SearchBar from '@/component/SearchBar';
-import ListPage from '@/component/ListPage';
-import CardPerson from '@/component/CardPerson';
+import SearchBar from '@/components/SearchBar';
+import ListPage from '@/components/ListPage';
+import CardPerson from '@/components/CardPerson';
 
 
 
@@ -61,9 +61,9 @@ export default function Home() {
         </div>
 
 
-        <div className='flex justify-center items-center  flex-wrap mt-16  '>
+       
         <ListPage sendResults={searcheResults} />
-        </div>
+        
       
         
        

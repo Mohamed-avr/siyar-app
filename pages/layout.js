@@ -1,5 +1,5 @@
-import AppContext from '@/component/AppContext';
-import DarkModeButton from '@/component/DarkModeButton';
+import AppContext from '@/components/AppContext';
+import DarkModeButton from '@/components/DarkModeButton';
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useContext } from 'react';

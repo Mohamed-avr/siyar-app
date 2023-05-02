@@ -63,7 +63,7 @@
   }
 }
 
-.inputStyle { 
+/* .inputStyle { 
 
   height: 50px;
   width: 300px;
@@ -73,9 +73,10 @@
   padding-right: 10px;
   border: 1px solid #fff;
 
-}
 
-.buttonSearch { 
+} */
+
+/* .buttonSearch { 
   background-color: #17bb56; 
   font-size: 14px; 
   padding: 10px;
@@ -87,4 +88,5 @@ height:50px;
 
 .buttonSearch:hover { 
   background-color: #22d366;
-}
+} */
+

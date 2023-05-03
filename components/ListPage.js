@@ -13,8 +13,8 @@ export default function ListPage(props) {
 
     
   return (
-    <main className='flex justify-center items-center  flex-wrap mt-16  '> 
+    <div className='flex justify-center items-center  flex-wrap mt-16  '> 
          {content} 
-   </main>
+   </div>
   )
 }

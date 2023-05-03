@@ -1,5 +1,6 @@
 import AppContext from '@/components/AppContext';
 import DarkModeButton from '@/components/DarkModeButton';
+import Footer from '@/components/Footer';
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useContext } from 'react';
@@ -19,7 +20,8 @@ export default function Layout() {
     }
 
     return (
-        <div className=' bg-gray-200/40  font-arabicFont2 font dark:bg-ForBackprimary dark:text-ForTexts min-h-[46rem] '>
+        <>
+        <div className=' relative bg-gray-200/40  font-arabicFont2 font dark:bg-ForBackprimary dark:text-ForTexts min-h-[42rem] '>
             <article >
                 <div className=' bg-white dark:bg-ForBackSecondary  h-40 w-full  rounded-b-lg overflow-hidden flex flex-col  items-end  '>
                     <div className=' h-10 w-full  '></div>
@@ -39,6 +41,9 @@ export default function Layout() {
                 </div>
               
             </article>
-        </div>
+            <Footer/>   
+             </div>
+         
+         </>
     )
 }

@@ -14,10 +14,10 @@ export default function SearchBar({siyar , setSearcheResults}) {
     }
 
   return (
-    <header>  
+    <>  
         <form  onSubmit={handleSubmit}  >
             <input 
-            className="dark:bg-ForBackprimary    rounded-xl text-right pr-2 font-arabicFont  mt-10 h-12 w-[20rem]  border-2 dark:border-white/70 border-[#21a753]/80  outline-none "
+            className="dark:bg-ForBackprimary rounded-3xl text-right text-sm pr-3 font-arabicFont  mt-9 h-12 w-[20rem]  border-2 dark:border-white/70 border-black/40  outline-none "
             type="text"
             id="search"
             placeholder="إبحث الأن"
@@ -26,6 +26,6 @@ export default function SearchBar({siyar , setSearcheResults}) {
             />
           
         </form>
-    </header>
+    </>
   )
 }

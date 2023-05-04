@@ -9,7 +9,7 @@ export default function DarkModeButton() {
     <>
       {colorTheme === "light" ? (
         <button onClick={() => setTheme("light")} className='  flex justify-around items-center '>
-         <div className='mr-2' >
+         <div className='sm:mr-2' >
          <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -32,7 +32,7 @@ export default function DarkModeButton() {
         :
         (
           <button onClick={() => setTheme("dark")} className='flex justify-around  items-center'>
-          <div className='mr-2' >
+          <div className='sm:mr-2' >
           <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 "

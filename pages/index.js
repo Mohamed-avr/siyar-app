@@ -47,7 +47,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
 
-      <main className={`${siyar ? 'dark:bg-ForBackprimary  dark:text-ForTexts h-auto' : 'dark:bg-ForBackprimary dark:text-ForTexts h-screen  '}`} >
+      <main className={`${siyar ? 'dark:bg-ForBackprimary  dark:text-ForTexts h-auto bg-gray-100' : 'dark:bg-ForBackprimary dark:text-ForTexts h-screen  bg-gray-100 '}`} >
        
         <div className='  dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative  rounded-bl-[1.6rem] sm:rounded-bl-[3rem] rounded-br-[1.6rem] sm:rounded-br-[3rem]  shadow-xl  shadow-black/5  '>
 

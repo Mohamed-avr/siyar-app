@@ -34,8 +34,8 @@ export default function Layout() {
 
                     </div>
                 </div>
-                <div className='sm:px-10 px-3 min-h-[22rem]'>
-                    <p className='mt text-right mt-10 font-lg text-black/85 pb-10  '>
+                <div className='sm:px-10 px-3  min-h-[22rem] sm:mt-12 mt-10 '>
+                    <p className='mt text-right mt-10 font-lg text-black/85 pb-10 leading-10 '>
                         {bio}
                     </p>
                 </div>

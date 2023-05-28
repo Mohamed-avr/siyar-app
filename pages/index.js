@@ -19,12 +19,13 @@ import GoTopButton from '@/components/GoTopButton';
 
 export default function Home() {
 
-  const { person, setPerson, bio, setBio } = useContext(AppContext);
+  const { person, setPerson, bio, setBio , valueInput , setValueInput  } = useContext(AppContext);
 
   const [siyar, setSiyar] = useState([]);
   const [searcheResults, setSearcheResults] = useState([]);
   const router = useRouter();
   const [colorTheme, setTheme] = useDarkMode();
+ 
 
  
  
@@ -34,11 +35,14 @@ export default function Home() {
       setSiyar(json);
       return json 
     }).then(json => {
-      setSearcheResults(json)
+      setSearcheResults(json);
     })
   }, []);
 
-  console.log(searcheResults , 'this is the results Index App');
+
+
+  
+  
 
   return (
     <div>
@@ -49,15 +53,18 @@ export default function Home() {
 
       <main className={`${siyar ? 'dark:bg-ForBackprimary  dark:text-ForTexts h-auto bg-gray-100' : 'dark:bg-ForBackprimary dark:text-ForTexts h-screen  bg-gray-100 '}`} >
        
-        <div className='  bg-white dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative  rounded-bl-[1.6rem] sm:rounded-bl-[3rem] rounded-br-[1.6rem] sm:rounded-br-[3rem]  shadow-xl  shadow-black/5  '>
+        <div className='  bg-white dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative   rounded-br-[1.6rem] sm:rounded-br-[3rem]  shadow-xl  shadow-black/5  '>
 
           <div className='flex  mt-20 justify-between w-full    '>
-           <div className=' dark:bg-ForBackprimary bg-gray-100 sm:px-4 p-2 sm:py-2 rounded-xl '>
+           <div className=' dark:bg-ForBackprimary bg-gray-100 sm:px-4 p-2 sm:py-2 '>
            <DarkModeButton />
            </div>
             <h2 className=' font-arabicFont sm:text-3xl text-xl  dark:text-ForTexts text-black   z-10 '> أكثر الشخصيات العربية </h2>
           </div>
-          <SearchBar  siyar={siyar} setSearcheResults={setSearcheResults} />
+          <div className=' flex flex-row w-[340] mt-9  bg-[#644] '>
+           <SearchBar  siyar={siyar} setSearcheResults={setSearcheResults} searcheResults={searcheResults} /> 
+        
+          </div>
  
         </div>
 

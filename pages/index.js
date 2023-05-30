@@ -53,7 +53,7 @@ export default function Home() {
 
       <main className={`${siyar ? 'dark:bg-ForBackprimary  dark:text-ForTexts h-auto bg-gray-100' : 'dark:bg-ForBackprimary dark:text-ForTexts h-screen  bg-gray-100 '}`} >
        
-        <div className='  bg-white dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative   rounded-br-[1.6rem] sm:rounded-br-[3rem]  shadow-xl  shadow-black/5  '>
+        <div className='  bg-white dark:bg-ForBackSecondary sm:px-11  px-6 h-40 flex flex-col justify-center items-center relative     shadow-xl  shadow-black/5  '>
 
           <div className='flex  mt-20 justify-between w-full    '>
            <div className=' dark:bg-ForBackprimary bg-gray-100 sm:px-4 p-2 sm:py-2 '>
